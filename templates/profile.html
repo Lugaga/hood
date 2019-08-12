@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        {% if profile.user == user %}
+        <h1 class="text-center my-4">My Businesses</h1>
+        {% else %}
+        <h1 class="text-center my-4">{{profile.name}}'s Businesses</h1>
+        {% endif%}
+        {% if businesses %}
+        <div class="row">
+            {% for business in businesses %}
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="card-title">{{business.name}}</h2>
+                        <p class="card-text">{{business.description}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <h2 class="text-center">No business created!</h2>
+        {% endif %}
+        {% if profile.user == user %}
+        <a href="{% url 'edit_profile' user %}" class="btn btn-primary mt-3">Edit Profile</a>
+        {% endif%}
+    </div>
+{% endblock %}
