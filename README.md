@@ -4,7 +4,23 @@
 
 #### By **Lugaga Maurice Ngulu**
 
-## APP
+## The Web Application Screengrabs.
+
+* Home Page
+
+![Home Page](static/media/home.png)
+
+* Biz In The Hood Page
+
+![Biz In The Hood](static/media/biz.png)
+
+* User Registeration | Sign Up Page
+
+![User Sign Up](static/media/register.png)
+
+* User Login Page
+
+![User Login](static/media/logn.png)
 
 ## Description
 This is a simple Web Application that showcases different neighborhoods.
@@ -38,5 +54,5 @@ No Bugs
 * Email: maureegaga@outlook.com
 
 ### License and Copyright details
-* The MIT License [MIT]()
+* The MIT License [MIT](LICENSE)
 * Copyright (c) 2019 **Engineer Lugaga**
