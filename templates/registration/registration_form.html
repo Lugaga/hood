@@ -1,0 +1,25 @@
+{% extends 'registration/base.html' %}
+{% load bootstrap4 %}
+{% block content%}
+<div class="container">
+    <div class="card mt-5 w-75 mx-auto">
+        <div class="container">
+            <div class="card-body">
+                <form action="/accounts/register/" method="post">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    <input type="submit" value="Sign up" class="btn btn-primary btn-block">
+                    <input type="hidden" name="next" value="{{next}}">
+                </form>
+
+                <div class="text-center my-3">
+                    <p>By signing up, you agree to our Terms, Data Policy and Cookies Policy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-body my-3 w-75 mx-auto text-center">
+        <p>Have an account? <a href="/accounts/login">Log in</a></p>
+    </div>
+</div>
+{% endblock %}
