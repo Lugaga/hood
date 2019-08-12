@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="text-center">Found {{results | length}} results for {{message}}.</h1>
+    <ol>
+    {% for result in results %}
+        <li>{{result.name}}</li>
+    {% endfor %}
+    </ol>
+{% endblock %}
