@@ -20,7 +20,7 @@
 
 * User Login Page
 
-![User Login](static/media/logn.png)
+![User Login](static/media/login.png)
 
 ## Description
 This is a simple Web Application that showcases different neighborhoods.
